@@ -27,7 +27,8 @@
   "homepage": "https://github.com/TheSpecialist4/sargam-trainer#readme",
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "soundfont-player": "^0.11.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
