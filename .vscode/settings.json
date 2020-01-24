@@ -1,0 +1,4 @@
+{
+    "flowide.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+    "javascript.validate.enable": false
+}

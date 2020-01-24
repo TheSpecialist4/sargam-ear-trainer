@@ -10,13 +10,17 @@ module.exports = {
     module: {
         rules: [
             { test: /\.(js|jsx|mjs)$/, use: 'babel-loader' },
-            { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] }
+            { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }
         ]
     },
     mode: 'development',
     plugins: [
         new HtmlWebpackPlugin({
-            template: './app/index.html'
+            template: path.join(__dirname, 'app', 'index.html')
         })
     ]
 }
